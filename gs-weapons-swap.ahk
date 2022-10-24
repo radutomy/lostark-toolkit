@@ -1,6 +1,3 @@
-; Put this file in: C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-; Or type in shell:startup in Run
-
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% 
 #SingleInstance, force
@@ -33,6 +30,14 @@ Loop, %MCount%
 }
 
 #If WinActive("ahk_exe LOSTARK.exe") OR WinActive("ahk_exe GeForceNOW.exe")
+
+; for 2560x1440
+; XPos := 1278
+; YPos := 1308
+
+; for 1920x1080
+; XPos := 958
+; YPos := 974
 
 1::
     PixelGetColor, color, XPos, YPos, rgb
@@ -97,3 +102,5 @@ return
 
     }
 return
+
+#If
