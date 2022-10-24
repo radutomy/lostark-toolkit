@@ -29,7 +29,7 @@ Loop, %MCount%
     }
 }
 
-#If WinActive("ahk_exe LOSTARK.exe") OR WinActive("ahk_exe GeForceNOW.exe")
+#If WinActive("ahk_exe LOSTARK.exe")
 
 ; for 2560x1440
 ; XPos := 1278
